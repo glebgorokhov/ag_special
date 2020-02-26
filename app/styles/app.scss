@@ -22,3 +22,7 @@
 .js-sr {
   visibility: hidden;
 }
+
+.main {
+  @include rule(padding, (xl: 55px 0 107px, md: 30px 0 50px));
+}

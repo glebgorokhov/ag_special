@@ -3,7 +3,7 @@
 // ##########
 // Базовые настройки сетки сайта
 // ##########
-$container-width: 960px; // Максимальная ширина контейнера контента
+$container-width: 1300px; // Максимальная ширина контейнера контента
 $container-padding: 20px; // Отступы слева и справа у контейнера
 $grid-container-width: 100%; // Ширина контейнера сетки
 $grid-cols: 12; // Количество колонок в сетке
@@ -20,11 +20,19 @@ $breakpoints: (
 // ##########
 // Цвета
 // ##########
-$color-basic: black; // Основной цвет текста (применяется к body)
+$color-basic: #333; // Основной цвет текста (применяется к body)
 $color-placeholder: #777; // Основной цвет для placeholder
 $color-input: black; // Основной цвет input, select и textarea
-$color-main: #2252d8; // Основной фирменный цвет
-$color-border: #ccc; // Основной цвет границ таблиц, секций
+$color-main: #b42828; // Основной фирменный цвет
+$color-border: #ededed; // Основной цвет границ таблиц, секций
+
+$color-dark-1: #211f19;
+$color-dark-2: #262223;
+
+$color-grey-1: #848380;
+$color-grey-2: #787878;
+$color-grey-3: #585755;
+$color-grey-4: #2b2728;
 
 // ##########
 // Массив цветов для UI-кита
@@ -45,8 +53,10 @@ $ease-main: .2s ease;
 // ##########
 // Шрифты
 // ##########
-$font-main: Arial, sans-serif; // Основной шрифт сайта
-$font-second: Times New Roman, sans-serif; // Дополнительный шрифт
+$font-main: 'Noto Sans', sans-serif; // Основной шрифт сайта
+$font-second: 'Noto Serif', serif; // Дополнительный шрифт
+$font-third: Georgia, serif;
+$font-fourth: 'Intro', sans-serif; // Дополнительный шрифт
 
 // ##########
 // Цвета для UI-кита (удалить, если он отсутствует)

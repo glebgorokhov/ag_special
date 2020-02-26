@@ -1,0 +1,25 @@
+mixin section(data)
+  +b.section&attributes(attributes)
+    +e.A.block(style="background-color: " + data.backgroundColor + ";", class=data.blockClass, href=data.link, target="_blank")
+      +e.P.title!= data.title
+      +e.IMG.background(src=data.image, alt="@@")
+
+    +e.content
+      +e.circle
+        +icon('pen')
+      +e.text
+        p!= data.text
+
+mixin ui-kit-section()
+  +ui-section
+    +ui-section-head
+      +ui-title Секция
+      +ui-path
+        p Компонент: components/section/section
+
+    +ui-section-content()
+      +section(getData('sections')[0])
+
+    //- При +ui-section-content(true) контейнер отсутствует
+    //- Для перечисления инлайновых блоков используется миксин +ui-elements-list()
+    //- Рамка вокруг особой секции: +ui-special()

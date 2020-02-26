@@ -1,7 +1,12 @@
 extends ../../layouts/default
 
 block head
-  - var pageTitle = projectName + ' | index'
+  - var pageTitle = projectName + ' | Спецпроекты'
 
 block content
-  p Страница: index
+  +header
+  +b.MAIN.main
+    .container
+      each section in getData('sections')
+        +section(section)
+  +footer

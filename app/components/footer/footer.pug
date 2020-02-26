@@ -1,0 +1,27 @@
+mixin footer()
+  +b.footer&attributes(attributes)
+    +e.top
+      .container
+        +socials.__socials
+
+    +e.bottom
+      .container
+        +e.P.copyright © Адвокатская газета, 2020. Все права защищены
+        +e.P.disclaimer Отдельные публикации могут содержать информацию, не предназначенную для пользователей до 16 лет
+        +e.P.text Воспроизведение материалов полностью или частично без разрешения редакции запрещено. Мнение редакции может не совпадать с точкой зрения авторов. Присланные материалы не рецензируются и не возвращаются.
+
+mixin ui-kit-footer()
+  +ui-section
+    +ui-section-head
+      +ui-title Компонент footer
+      +ui-path
+        p Компонент: components/footer/footer
+      +ui-description
+        p Описание компонента
+
+    +ui-section-content()
+      +footer
+
+    //- При +ui-section-content(true) контейнер отсутствует
+    //- Для перечисления инлайновых блоков используется миксин +ui-elements-list()
+    //- Рамка вокруг особой секции: +ui-special()

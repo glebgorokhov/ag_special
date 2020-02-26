@@ -1,0 +1,77 @@
+.header {
+  display: block;
+  background: $color-dark-1;
+  color: rgba(white, .56);
+
+  @include rule(padding, (xl: 11px 0, md: 15px 0));
+
+  $b: &;
+
+  .container {
+    @include rule(display, (xl: flex, md: block));
+
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    img {
+      @include rule(width, (xl: 61px, md: 40px));
+    }
+
+    span {
+      font-family: $font-fourth;
+      margin-left: 10px;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: white;
+
+      @include rule(font-size, (xl: 26px, md: 18px));
+    }
+  }
+
+  &__text {
+    font-family: $font-second;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.21px;
+
+    @include rule(padding-top, (xl: 8px, md: 0));
+    @include rule(margin, (xl: 0 30px 0 86px, md: 15px 0 0));
+  }
+
+  &__link {
+    color: $color-grey-1;
+    fill: $color-grey-1;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: fill $ease-main, color $ease-main;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    @include rule(margin-top, (md: 15px));
+    @include rule(padding-top, (xl: 8px, md: 0));
+
+    &:hover {
+      fill: white;
+      color: white;
+    }
+
+    svg {
+      width: 15px;
+      height: 10px;
+    }
+
+    span {
+      margin-left: 12px;
+    }
+  }
+}

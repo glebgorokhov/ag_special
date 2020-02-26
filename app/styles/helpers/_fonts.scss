@@ -18,3 +18,13 @@
 800 — Extra Bold, Ultra Bold
 900 — Black, Heavy
 */
+
+@include font-face('Intro', normal, 700, 'IntroBold');
+@include font-face('Noto Sans', normal, 400, 'NotoSansRegular');
+@include font-face('Noto Sans', italic, 400, 'NotoSansItalic');
+@include font-face('Noto Sans', normal, 700, 'NotoSansBold');
+@include font-face('Noto Sans', italic, 700, 'NotoSansBoldItalic');
+@include font-face('Noto Serif', normal, 400, 'NotoSerifRegular');
+@include font-face('Noto Serif', italic, 400, 'NotoSerifItalic');
+@include font-face('Noto Serif', normal, 700, 'NotoSerifBold');
+@include font-face('Noto Serif', italic, 700, 'NotoSerifBoldItalic');

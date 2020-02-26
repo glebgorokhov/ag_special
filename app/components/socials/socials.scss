@@ -1,0 +1,48 @@
+.socials {
+  display: flex;
+  align-items: center;
+
+  $b: &;
+
+  &__link {
+    fill: white;
+    border: 1px solid rgba(white, .09);
+    box-sizing: border-box;
+    position: relative;
+    transition: fill $ease-main, border-color $ease-main;
+
+    @include rule(width, (xl: 85px, md: 60px));
+    @include rule(height, (xl: 43px, md: 40px));
+
+    &:hover {
+      fill: #22b9d9;
+      border-color: #22b9d9;
+    }
+
+    &_facebook:hover {
+      fill: #3b5998;
+      border-color: #3b5998;
+    }
+
+    &_vk:hover {
+      fill: #45668e;
+      border-color: #45668e;
+    }
+
+    &_telegram:hover {
+      fill: #0088cc;
+      border-color: #0088cc;
+    }
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    svg {
+      width: 16px;
+      height: 12px;
+
+      @include center-image;
+    }
+  }
+}
